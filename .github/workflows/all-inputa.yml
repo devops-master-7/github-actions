@@ -3,11 +3,11 @@ name: input demo
 on:
   workflow_dispatch:
     inputs:
-      Owner:
+      owner:
         description: Owner Name
         type: string
         default: DevOps
-      Age:
+      age:
         description: Age
         type: number
         required: true
@@ -29,4 +29,4 @@ jobs:
     -  name: taking owner name
        run: echo "Hello ${{ inputs.Owner }}, This is a demo for inputs in github action"
     -  name: taking owner age
-       run: echo "Owner's age is: ${{ inputs.Age }}"
+       run: echo ${{ inputs.age }}
