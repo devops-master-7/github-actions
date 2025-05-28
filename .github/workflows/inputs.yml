@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     -  name: taking input
-       run: echo "Hello Team, This is a demo for inputs in github action"
+       run: echo "Hello ${{ inputs.owner }}, This is a demo for inputs in github action"
