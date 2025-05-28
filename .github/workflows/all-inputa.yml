@@ -29,4 +29,4 @@ jobs:
     -  name: taking owner name
        run: echo "Hello ${{ inputs.Owner }}, This is a demo for inputs in github action"
     -  name: taking owner age
-       run: echo Owner's age is: ${{ inputs.Age }} 
+       run: echo "Owner's age is: ${{ inputs.Age }}"
