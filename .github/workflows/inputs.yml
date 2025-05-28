@@ -1,0 +1,16 @@
+name: input demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: Owner Name
+        type: string
+        default: DevOps
+
+jobs:
+  input:
+    runs-on: ubuntu-latest
+    steps:
+    -  name: taking input
+       run: echo "Hello Team, This is a demo for inputs in github action"
